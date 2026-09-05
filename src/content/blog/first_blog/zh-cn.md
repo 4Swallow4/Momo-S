@@ -4,7 +4,7 @@ pubDate: 2026-09-05
 description: MY FIRST BLOG
 category: NEW
 image: "./images/芳文.png"
-draft: true
+draft: false
 slugId: momo/first_blog/first
 ---
 # 这是我的第一条博客
@@ -12,5 +12,5 @@ slugId: momo/first_blog/first
 
 还挺有意思的，接下来继续学习
 
-
+::music{id="2727720014"}
 ---

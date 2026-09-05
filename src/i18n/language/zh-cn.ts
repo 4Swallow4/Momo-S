@@ -9,7 +9,7 @@ const translation: Translation = {
     },
     cover: {
         title: {
-            home: "欢迎来到Swall0w的博客",
+            home: "欢迎来到 Swall0w 的博客",
             archive: "文章归档",
             about: "关于",
             friends: "友链",
@@ -17,7 +17,7 @@ const translation: Translation = {
         subTitle: {
             home: "A Coding Bird",
             archive: "共 {count} 篇文章",
-            about: "一个极简的Blog模板",
+            about: "我",
             friends: "有趣的灵魂",
         }
     },
