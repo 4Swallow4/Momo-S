@@ -3,7 +3,7 @@
   "type": "module",
   "version": "26.8.15",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "node script/dev.cjs dev",
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
