@@ -23,7 +23,8 @@ slugId: momo/intro/on
 这个就相对轻松很多了，注册cloudflare之后直接就用他的 work&pages 栏创建应用程序，直接选择部署 Pages 链到 Github 博客仓库，设置好  
 - 生产构建 pnpm build
 - 环境变量 NODE_VERSION=24 && PNPM_VERSION=11
-- 项目名称
+- 项目名称  
+
 就直接部署上线，免费域名即可访问了
 
 
