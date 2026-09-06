@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
     title: "Swall0w",
     subTitle: "Blog",
 
-    favicon: "/favicon/favicon.ico", // Path of the favicon, relative to the /public directory
+    favicon: "/favicon/325050913@2x.png", // Path of the favicon, relative to the /public directory
 
     pageSize: 6, // Number of posts per page
     toc: {
