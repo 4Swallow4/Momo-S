@@ -9,7 +9,7 @@ const translation: Translation = {
     },
     cover: {
         title: {
-            home: "欢迎来到 Swall0w 的博客",
+            home: "欢迎来到 YanZ 的博客",
             archive: "文章归档",
             about: "关于",
             friends: "友链",

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(pnpm build)", "Bash(pnpm dev)", "Bash(pnpm cms)",
+      "Bash(node script/dev.cjs *)", "Bash(node script/newpost.js *)",
+      "Bash(git status)", "Bash(git log *)", "Bash(git diff *)",
+      "Bash(git add *)", "Bash(git commit -m *)"
+    ],
+    "deny": ["Read(./.env)", "Edit(./.env)"]
+  }
+}

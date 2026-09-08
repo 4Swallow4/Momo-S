@@ -25,7 +25,7 @@ import { siteConfig } from './src/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://swall0w.pages.dev', // Root URL of site
+  site: 'https://YanZ.pages.dev', // Root URL of site
   i18n: {
     locales: ['zh-cn', 'en'],
     defaultLocale: 'zh-cn',
