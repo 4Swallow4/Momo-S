@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
     title: "YanZ",
     subTitle: "Blog",
 
-    favicon: "/favicon/325050913@2x.png", // Path of the favicon, relative to the /public directory
+    favicon: "/favicon/sayaka.png", // Path of the favicon, relative to the /public directory
 
     pageSize: 6, // Number of posts per page
     toc: {
