@@ -15,7 +15,7 @@ const translation: Translation = {
             friends: "友链",
         },
         subTitle: {
-            home: "A Coding Bird",
+            home: "A Thinking Bird",
             archive: "共 {count} 篇文章",
             about: "我",
             friends: "有趣的灵魂",
