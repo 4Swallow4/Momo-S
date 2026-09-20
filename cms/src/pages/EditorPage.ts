@@ -116,6 +116,7 @@ function buildToolbar(getMd: () => HTMLTextAreaElement | null): HTMLElement {  c
     }, ['提示块']),
     btn({ label: 'GitHub', title: 'GitHub 仓库卡片 ::github{repo="owner/repo"}', template: '::github{repo="{cur}owner/repo"}' }),
     btn({ label: '音乐', title: '网易云音乐卡片 ::music{id="歌曲ID"}', template: '::music{id="{cur}歌曲ID"}' }),
+    btn({ label: 'B站', title: 'B站视频卡片 ::bilibili{id="BV号或av号"}', template: '::bilibili{id="{cur}BVxxxxxx"}' }),
     btn({ label: '注音', title: '注音 {中文}(pinyin)', template: '{{sel}中文}({cur}pinyin)' }),
     btn({ label: '模糊', title: '模糊内容（hover 显示）!!文字!!', wrap: ['!!', '!!'] }),
     btn({ label: '彩虹', title: '彩虹文字 ==文字==', wrap: ['==', '=='] }),

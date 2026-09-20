@@ -478,6 +478,107 @@
   border-color: #733030;
 }
 
+/* bilibili卡片样式 */
+.card-bilibili {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 12px var(--shadow-color); */
+    text-decoration: none;
+    transition: all 0.8s ease !important; 
+    border: 1px solid var(--button-border-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.card-bilibili:hover {
+    box-shadow: 0 8px 20px var(--shadow-color);
+    /* transform: translateY(-3px); */
+    border-color: var(--link-color);
+}
+
+.bili-card {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    align-items: center;
+}
+
+.bili-card::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300A1D6'%3E%3Cpath d='M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.868c0-.308.104-.575.312-.801.208-.226.462-.339.754-.339.304 0 .56.104.769.312L9.653 4.62h4.693l2.964-2.784c.207-.208.462-.312.769-.312.29 0 .546.113.754.339s.312.493.312.801c0 .192-.038.355-.113.489-.075.134-.18.254-.312.361zm.854 2.346H5.333c-.73.018-1.337.256-1.819.713-.482.458-.733 1.04-.754 1.747v7.467c.018.707.272 1.29.754 1.747.482.457 1.089.695 1.819.713h13.334c.73-.018 1.337-.256 1.819-.713.482-.457.733-1.04.754-1.747V9.36c-.018-.708-.272-1.29-.754-1.747-.482-.457-1.089-.695-1.819-.713zM8 11.333c.373 0 .684.124.933.373.25.249.373.562.373.934v1.813c0 .373-.124.687-.373.936-.249.25-.56.374-.933.374s-.687-.125-.936-.374c-.25-.249-.373-.563-.373-.936v-1.813c0-.372.124-.685.373-.934.249-.249.563-.373.936-.373zm8 0c.373 0 .683.124.933.373.25.249.373.562.373.934v1.813c0 .373-.123.687-.373.936-.25.25-.56.374-.933.374s-.687-.125-.936-.374c-.25-.249-.373-.563-.373-.936v-1.813c0-.372.123-.685.373-.934.249-.249.563-.373.936-.373z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+[data-theme="dark"] .bili-card::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23008BB0'%3E%3Cpath d='M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.868c0-.308.104-.575.312-.801.208-.226.462-.339.754-.339.304 0 .56.104.769.312L9.653 4.62h4.693l2.964-2.784c.207-.208.462-.312.769-.312.29 0 .546.113.754.339s.312.493.312.801c0 .192-.038.355-.113.489-.075.134-.18.254-.312.361zm.854 2.346H5.333c-.73.018-1.337.256-1.819.713-.482.458-.733 1.04-.754 1.747v7.467c.018.707.272 1.29.754 1.747.482.457 1.089.695 1.819.713h13.334c.73-.018 1.337-.256 1.819-.713.482-.457.733-1.04.754-1.747V9.36c-.018-.708-.272-1.29-.754-1.747-.482-.457-1.089-.695-1.819-.713zM8 11.333c.373 0 .684.124.933.373.25.249.373.562.373.934v1.813c0 .373-.124.687-.373.936-.249.25-.56.374-.933.374s-.687-.125-.936-.374c-.25-.249-.373-.563-.373-.936v-1.813c0-.372.124-.685.373-.934.249-.249.563-.373.936-.373zm8 0c.373 0 .683.124.933.373.25.249.373.562.373.934v1.813c0 .373-.123.687-.373.936-.25.25-.56.374-.933.374s-.687-.125-.936-.374c-.25-.249-.373-.563-.373-.936v-1.813c0-.372.123-.685.373-.934.249-.249.563-.373.936-.373z'/%3E%3C/svg%3E");
+}
+
+.bili-cover-wrapper {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.bili-cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--button-hover-color);
+    transition: all 0.3s ease;
+}
+
+.bili-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bili-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.bili-title {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bili-artist {
+    color: var(--text-color-70);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+[data-theme="dark"] .bili-title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .bili-artist {
+    color: #aaa;
+}
+
 
 /* GitHub Card Styles */
 .card-github {

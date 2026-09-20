@@ -8,9 +8,11 @@ import rehypeKatex from 'rehype-katex';
 import remarkDirective from 'remark-directive';
 import rehypeComponents from "rehype-components";
 
+// ESM imports for custom components
 import { admonition } from "./src/plugins/rehype-component-admonition.mjs";
 import { parseDirectiveNode } from "./src/plugins/remark-directive-rehype.js";
 import { MusicCardComponent } from "./src/plugins/rehype-component-music-card.mjs";
+import { BilibiliCardComponent, rehypeBilibiliPrefetch } from "./src/plugins/rehype-component-bilibili-card.mjs";
 import { GithubCardComponent } from './src/plugins/rehype-component-github-card.mjs';
 import { QuoteComponent } from "./src/plugins/rehype-component-quote.mjs"
 import { customFigurePlugin } from "./src/plugins/rehype-figure-plugin.mjs";
@@ -41,7 +43,7 @@ export default defineConfig({
       "simple-icons": ["*"],
       "vscode-icons": ["*"],
       "material-symbols": ["*"],
-      "flue": ["*"],
+      "fluent": ["*"],
     }
   }), svelte()],
   markdown: {
@@ -63,12 +65,14 @@ export default defineConfig({
       rehypePlugins: [
         rehypeKatex,
         customFigurePlugin,
+        rehypeBilibiliPrefetch,
         [
           rehypeComponents,
           {
-            components: {
+            components: {//映射表
               github: GithubCardComponent,
               music: MusicCardComponent,
+              bilibili: BilibiliCardComponent,
               quote: QuoteComponent,
               note: admonition("note"),
               tip: admonition("tip"),

@@ -3,7 +3,7 @@ title: 第一条 blog
 pubDate: 2026-09-05
 description: MY FIRST BLOG
 category: 体验
-image: "./images/芳文.png"
+image: ./images/芳文.png
 draft: false
 slugId: momo/first_blog/first
 ---

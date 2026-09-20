@@ -334,3 +334,25 @@ body {
 .markdown-content .music-title { font-weight: 600; }
 .markdown-content .music-artist { font-size: 0.85em; color: var(--text-sub); }
 .markdown-content .fetch-error { opacity: 0.5; border: 1px solid #ff6b6b; }
+
+/* B 站卡片 */
+.markdown-content .card-bilibili {
+  display: block;
+  max-width: 400px;
+  margin: 1.5rem auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--bg);
+}
+.markdown-content .card-bilibili:hover { border-color: var(--link); }
+.markdown-content .bili-card { display: flex; gap: 1rem; padding: 1rem; }
+.markdown-content .bili-cover-wrapper { flex-shrink: 0; }
+.markdown-content .bili-cover {
+  width: 72px; height: 72px; border-radius: 8px;
+  background: var(--code-bg); background-size: cover;
+}
+.markdown-content .bili-info { display: flex; flex-direction: column; justify-content: center; }
+.markdown-content .bili-title { font-weight: 600; }
+.markdown-content .bili-artist { font-size: 0.85em; color: var(--text-sub); }
