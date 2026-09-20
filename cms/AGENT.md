@@ -52,7 +52,7 @@ cms/
 ```
 
 - **API 端口**：5188（唯一端口，Vite dev server 内嵌 Hono）
-- **预览管线**：直接复用 `../src/plugins/*.mjs`（remark-typst、remark-directive-rehype、remark-combined、admonition、github/music/quote 卡片、figure 插件）+ KaTeX + shiki 高亮（one-dark-pro 主题），与博客 astro.config.mjs 的插件顺序一致，跳过仅构建期需要的 reading-time 与 LQIP 插件。
+- **预览管线**：直接复用 `../src/plugins/*.mjs`（remark-typst、remark-directive-rehype、remark-combined、admonition、github/music/bilibili/quote 卡片、figure 插件）+ KaTeX + shiki 高亮（one-dark-pro 主题），与博客 astro.config.mjs 的插件顺序一致，跳过仅构建期需要的 reading-time 与 LQIP 插件。
 
 ## API 一览
 
@@ -75,6 +75,7 @@ cms/
 | `:::note{name="提示"}`…`:::`（note/tip/important/caution/warning） | Alert 提示块（块级容器，`{name="..."}` 可选） |
 | `::github{repo="owner/repo"}` | GitHub 仓库卡片 |
 | `::music{id="歌曲ID"}` | 网易云音乐卡片 |
+| `::bilibili{id="av号或BV号"}` | B站视频卡片 |
 | `::quote[内容]` | 居中引用组件 |
 | `$...$` / `$$...$$` | KaTeX 数学公式 |
 | ```` ```typst ```` | Typst 代码块 → SVG 渲染 |

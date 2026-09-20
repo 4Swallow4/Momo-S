@@ -26,6 +26,7 @@ import { customFigurePlugin } from '../../src/plugins/rehype-figure-plugin.mjs'
 import { admonition } from '../../src/plugins/rehype-component-admonition.mjs'
 import { GithubCardComponent } from '../../src/plugins/rehype-component-github-card.mjs'
 import { MusicCardComponent } from '../../src/plugins/rehype-component-music-card.mjs'
+import { BilibiliCardComponent, rehypeBilibiliPrefetch } from '../../src/plugins/rehype-component-bilibili-card.mjs'
 import { QuoteComponent } from '../../src/plugins/rehype-component-quote.mjs'
 import { normalizeData } from './store.mjs'
 
@@ -122,10 +123,12 @@ function createProcessor(base) {
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeKatex)
     .use(customFigurePlugin)
+    .use(rehypeBilibiliPrefetch)
     .use(rehypeComponents, {
       components: {
         github: GithubCardComponent,
         music: MusicCardComponent,
+        bilibili: BilibiliCardComponent,
         quote: QuoteComponent,
         note: admonition('note'),
         tip: admonition('tip'),
